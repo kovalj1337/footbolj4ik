@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    font-family: "Arial";
+    cursor: url("/img/cursor.cur"), default;
+}
+h1 {
+    margin: 0 0 17px;
+    color: #39930d;
+    font-size: 24px;
+}
+ul {
+    list-style: none;
+}
+.background {
+    background-color: #8dc63f;
+}
+.wrapper {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 960px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.logo p,
+.contacts p {
+    margin: 0;
+}
+.ball{
+    margin: 0px 34px ;
+    width: 100%;
+    animation: boll 2s linear infinite;
+}
+@keyframes boll {
+    0%,100%{
+        transform: translateX(0) 
+    }
+    50%{
+        transform: translate(200px, 200px)
+    }   
+    70%{
+        transform: translate(300px, 150px);
+    } 
+}
+.contacts p {
+    text-align: right;
+}
+.logo p,
+.contacts a {
+    color: #39930d;
+    font-size: 22px;
+}
+.logo b {
+    display: block;
+    color: #39930d;
+    font-size: 44px;
+}
+.contacts i {
+    display: block;
+}
+.contacts a { 
+    display: block;
+    margin-bottom: 8px;
+    text-decoration: none;
+}
+.logo i,
+.contacts i {
+    color: #5a5a5a;
+    font-size: 14px;
+}
+.picture{
+    width: 100%;
+}
+.main {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 37px;
+    padding: 24px 0 6px;
+}
+.information p {
+    margin: 0 0 20px;
+    color: #343434;
+    font-size: 14px;
+    line-height: 1.5em;
+}
+.partners {
+    min-width: 300px;
+}
+.partners p {
+    margin: 0;
+    padding: 14px 0 10px 19px;
+    color: #ffffff;
+    font-size: 18px;
+    background-color: #39930d;
+}
+.partners ul{
+    margin: 0;
+    padding: 20px 0 0 0px;
+}
+.partners li{
+    padding-left: 20px;
+    transition: all 1s ease-in;
+}
+.partners a {
+    display: block;
+    color: #39930d;
+    font-size: 14px;
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 2.1em;
+}
+.partners li:hover{
+    background-color: #d5f5d4;
+    border-radius: 5px;
+}
+.footer {
+    margin: 0px -15px;
+    padding: 17px 0 14px 16px;
+    color: #ffffff;
+    font-size: 14px;
+    background-color: #39930d;
+}
