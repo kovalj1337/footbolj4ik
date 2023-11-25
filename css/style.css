@@ -21,13 +21,14 @@ ul {
     background-color: #ffffff;
     box-sizing: border-box;
 }
-.header{
+.display-flex{
     display: flex;
     justify-content: space-between;
+}
+.header{
     padding: 25px 0;
 }
 .logo{
-    display: flex;
     align-items: center;
     justify-content: flex-start;
 }
@@ -81,8 +82,6 @@ ul {
     width: 100%;
 }
 .main {
-    display: flex;
-    justify-content: space-between;
     column-gap: 37px;
     padding: 24px 0 6px;
 }
