@@ -1,3 +1,6 @@
+html{
+    font-size: 0.8px;
+}
 body {
     margin: 0;
     font-family: "Arial";
@@ -16,7 +19,7 @@ ul {
 }
 .wrapper {
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 15rem;
     max-width: 960px;
     background-color: #ffffff;
     box-sizing: border-box;
@@ -26,18 +29,25 @@ ul {
     justify-content: space-between;
 }
 .header{
-    padding: 25px 0;
+    row-gap: 15rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 25rem 0;
 }
 .logo{
+    row-gap: 15rem;
     align-items: center;
-    justify-content: flex-start;
+    
+}
+.logo img{
+    width: 100%;
 }
 .logo p,
 .contacts p {
     margin: 0;
 }
 .ball{
-    margin: 0px 34px ;
+    margin: 0rem 34rem ;
     width: 100%;
     animation: boll 2s linear infinite;
 }
@@ -58,61 +68,66 @@ ul {
 .logo p,
 .contacts a {
     color: #39930d;
-    font-size: 22px;
+    font-size: 22rem;
 }
 .logo b {
     display: block;
     color: #39930d;
-    font-size: 44px;
+    font-size: 44rem;
 }
 .contacts i {
     display: block;
 }
 .contacts a { 
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 8rem;
     text-decoration: none;
 }
 .logo i,
 .contacts i {
     color: #5a5a5a;
-    font-size: 14px;
+    font-size: 14rem;
 }
 .picture{
     width: 100%;
+    min-height: 200px;
+    object-fit: cover;
+    object-position: 75%;
 }
 .main {
-    column-gap: 37px;
-    padding: 24px 0 6px;
+    flex-wrap: wrap-reverse;
+    column-gap: 37rem;
+    padding: 24rem 0 6rem;
 }
 .information p {
-    margin: 0 0 20px;
+    margin: 0 0 20rem;
     color: #343434;
-    font-size: 14px;
+    font-size: 14rem;
     line-height: 1.5em;
 }
 .partners {
+    width: 100%;
     min-width: 300px;
 }
 .partners p {
     margin: 0;
-    padding: 14px 0 10px 19px;
+    padding: 14rem 0 10rem 19rem;
     color: #ffffff;
-    font-size: 18px;
+    font-size: 18rem;
     background-color: #39930d;
 }
 .partners ul{
     margin: 0;
-    padding: 20px 0 0 0px;
+    padding: 20rem 0 0 0rem;
 }
 .partners li{
-    padding-left: 20px;
+    padding-left: 20rem;
     transition: all 1s ease-in;
 }
 .partners a {
     display: block;
     color: #39930d;
-    font-size: 14px;
+    font-size: 14rem;
     text-decoration: underline;
     text-transform: uppercase;
     text-decoration: none;
@@ -120,12 +135,36 @@ ul {
 }
 .partners li:hover{
     background-color: #d5f5d4;
-    border-radius: 5px;
+    border-radius: 5rem;
 }
 .footer {
-    margin: 0px -15px;
-    padding: 17px 0 14px 16px;
+    margin: 0rem -15rem;
+    padding: 17rem 0 14rem 16rem;
     color: #ffffff;
-    font-size: 14px;
+    font-size: 14rem;
     background-color: #39930d;
+}
+
+@media screen and (min-width: 768px) {
+    html{
+        font-size: 1px;
+    }
+    .header{
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .logo{
+        flex-wrap: nowrap;
+    }
+    .main{
+        flex-wrap: nowrap;
+    }
+    .navigation{
+        width: auto;
+    }
+}
+@media screen and (min-width:1440px) {
+    html{
+        font-size: 1.5px;
+    }
 }
